@@ -1,5 +1,6 @@
 import random
 import time
+
 def dice():
     sum = 0
     print("Rolling the dice...")
@@ -10,6 +11,14 @@ def dice():
         print(f"Die {i}: {num}")
         time.sleep(1)
     print(f"Total value: {sum}")
+    judge(sum)
+
+def judge(sum):
+    if sum > 7:
+        print("You won!")
+    else:
+        print("You lost.")
+
     
 if __name__ == '__main__':
     dice()
