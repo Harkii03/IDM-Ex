@@ -1,5 +1,11 @@
 import random
 import time
+
+def hello():
+    print("What is your name?")
+    name = input("> ")
+    print(f"Hello, {name}!")
+
 def dice():
     sum = 0
     print("Rolling the dice...")
@@ -12,4 +18,6 @@ def dice():
     print(f"Total value: {sum}")
     
 if __name__ == '__main__':
+    hello()
+    time.sleep(1)
     dice()
