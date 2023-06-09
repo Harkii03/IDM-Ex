@@ -21,7 +21,7 @@ def dice():
 
 def judge(sum):
     if sum > 7:
-        print(f"{name}won!")
+        print(f"{name} won!")
     else:
         print(f"{name} lost.")
 
